@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="web.js"></script>
+    <title>not yet</title>
+</head>
+<body alink="green">
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="splogo.jpg" style="width:50px;height:50px;"/></a><br>
+                <b style="font-family:Arial, Helvetica, sans-serif;">Sports</b>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Products</a></li>
+                    <li><a href="sign.html">Account</a></li>
+                    <li><a href="store.html"><img src="images/cart.png" class="cart" title="Shop Now" width="30" height="30"/></a></li>
+                </ul>
+            </nav>
+        </div>
+<!----------------signup------------------>
+    <div class="signup" id="signupform" action="#">
+        <div onclick="document.getElementById('signupform').style.display='none'" class="close" title="Close" style="font-size:40px;font-weight: 900;cursor:pointer;float: right;">&times;</div>
+        <form method="POST" class="form-block">        
+        <h1>&nbsp;Sign Up</h1>
+        <hr>
+        <table style="margin:5px">
+            <tr><td><br></td></tr>
+            <tr colspan="2"><td id="error"></td></tr>
+            <tr>
+                <td><label><b>Email Id</b></label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label><b>Password</b></label></td>
+                <td><input type="password" id="pwd" required></td>
+            </tr>
+            <tr>
+                <td><label><b>Retype Password</b></label></td>
+                <td><input type="password" id="rpwd" required></td>
+            </tr>
+            <tr>
+                <td><b>Mobile Number</b></td>
+                <td><input type="tel" id="ph" required/></td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id="signup" onclick="validate_form()" value="Sign up"><!--Sign up</button>-->
+        </form><br>
+        <center>Already have an account<br><br></center><button onclick="login()">LOGIN</button>
+    </div>
+</div>
+<!----------------login------------------>
+<div id=loginform style="display:none;">
+    <div onclick="document.getElementById('loginform').style.display='none'" class="close" title="Close" style="font-size:40px;font-weight: 900;cursor:pointer;float: right;">&times;</div>        
+    <h1>Login</h1>
+    <hr>
+    <form method="POST" class="form-block">
+        <table style="margin:5px">
+            <tr><td><br></td></tr>
+            <tr><td id="error"></td></tr>
+            <tr>
+                <td><label><b>Email</b></label></td>
+                <td><input type="email" placeholder="you@example.com" name="email" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td><label><b>Password</b></label></td>
+                <td><input type="password" placeholder="Enter Password" id="pwd" required></td>
+            </tr>
+        </table>
+    </form><br>
+    <button onclick="login_success()">LOGIN</button>
+    <br>
+    <center>New here?<br><br></center><button onclick="signup()">Sign up</button>
+</div>
+
+    
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--form 1-->
+<!--
+================================================================================
+<table style="margin:5px">
+            <tr><td><br></td></tr>
+            <tr><td id="error"></td></tr>
+            <tr>
+                <td><label><b>Email</b></label></td>
+                <td><input type="email" placeholder="you@example.com" name="email" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td><label><b>Password</b></label></td>
+                <td><input type="password" placeholder="Enter Password" id="pwd" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td><label><b>Confirm Password</b></label></td>
+                <td><input type="password" placeholder="Re-enter Password" id="rpwd" required></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td><label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label></td>
+            </tr> 
+            <tr><td><br></td></tr>
+            <tr><td colspan="2">By creating an account you agree to our <a href="#" >Terms & Privacy</a>.</td></tr>
+        </table>
+
+        =============================================================================
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--form decath
+<div class="modal-content">
+        <div class="btn-close float-right"></div>
+        <div class="modal-body">
+            <div class="no-gutters row">
+                <div class="col-sm-6 col-12">
+                    <div class="login-left">
+                        <div class="l-heading decaFadeInRight" style="animation-name: decaFadeInRight; visibility: visible; animation-duration: 0.6s;">
+                            <h4 class="text-uppercase">Login </h4>
+                            <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                    <div class="swiper-slide swiper-heading swiper-slide-active" style="width: 306px; margin-right: 10px;">
+                                        <h3>Get </h3><h3>access to</h3><h3 class="text-blue">personalised</h3><h3>shopping experience</h3>
+                                        <div class="login-icon text-right">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTIuNjg1IiBoZWlnaHQ9IjEzNy40NzUiIHZpZXdCb3g9IjAgMCAxMTIuNjg1IDEzNy40NzUiPgogIDxnIGlkPSJHcm91cF8zMDMiIGRhdGEtbmFtZT0iR3JvdXAgMzAzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE0My4zOTUgLTIyNy41MjUpIj4KICAgIDxnIGlkPSJBc3NldF8ybG9nbyIgZGF0YS1uYW1lPSJBc3NldCAybG9nbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcwOC4zOTUgMjQxLjUyNSkiPgogICAgICA8ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTY1IC0xNCkiPgogICAgICAgIDxwYXRoIGlkPSJQYXRoXzkyMSIgZGF0YS1uYW1lPSJQYXRoIDkyMSIgZD0iTTEuOCw2Ny4xSDBWNDMuMTIyYTUuNDM0LDUuNDM0LDAsMCwxLDQuOTIyLTUuNTU4Yy45NTEtLjE0LDEzLjM2LTIuNTExLDI0LjY1NS00LjY4M2wuOS0uMTcxLjMzOCwxLjc3MS0uOS4xNjdjLTUuNDksMS4wNTktMjMuNSw0LjUtMjQuNzM3LDQuN0EzLjczLDMuNzMsMCwwLDAsMS44LDQzLjEyMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTE3Ljk2NikiIGZpbGw9IiNkZDUxMDMiLz4KICAgICAgICA8cGF0aCBpZD0iUGF0aF85MjIiIGRhdGEtbmFtZT0iUGF0aCA5MjIiIGQ9Ik0xMTguNTgzLDIwMi43NDVsLS4zNDMtMS43NzEuOS0uMTcxYzEwLjcxLTIuMDc4LDQ2LjA3LTguOTExLDQ5LjE2Ny05LjMzNSwxLjI1My0uMTgsNy41MTgtMS40MzMsNy41MTgtOC40MzhWMTM2aDEuOHY0Ny4wM2MwLDYuNTg1LTQuODg2LDkuNjIzLTkuMDY5LDEwLjIxOC0zLjA1Ni40NTEtMzguMzU4LDcuMjQ4LTQ5LjEsOS4zMjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjQuOTQ1IC03NC43KSIgZmlsbD0iIzAwODJjMyIvPgogICAgICAgIDxwYXRoIGlkPSJQYXRoXzkyMyIgZGF0YS1uYW1lPSJQYXRoIDkyMyIgZD0iTTAsMjIzdjM2Ljk2TDE5Ljk5LDI1NiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMTIyLjQ4NSkiIGZpbGw9IiNkZDUxMDMiLz4KICAgICAgICA8cGF0aCBpZD0iUGF0aF85MjQiIGRhdGEtbmFtZT0iUGF0aCA5MjQiIGQ9Ik0yMjUuNjQsMzYuOTYxVjBMMjA1LjY1LDMuOTYyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEyLjk1NikiIGZpbGw9IiMwMDgyYzMiLz4KICAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9IkFzc2V0XzExc2VjdXJlIiBkYXRhLW5hbWU9IkFzc2V0IDExc2VjdXJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTgzLjc3MSAyNzAuMzc0KSI+CiAgICAgIDxnIGlkPSJDYWxxdWVfMiIgZGF0YS1uYW1lPSJDYWxxdWUgMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCkiPgogICAgICAgIDxwYXRoIGlkPSJQYXRoXzUwNSIgZGF0YS1uYW1lPSJQYXRoIDUwNSIgZD0iTTMuOTgsMjEuMjA2YTEuMSwxLjEsMCwwLDEtMS4xLTEuMVY5LjU0N2E5LjU0Nyw5LjU0NywwLDEsMSwxOS4wOTQsMHY3LjM5MWExLjEyMiwxLjEyMiwwLDAsMS0xLjEsMS4xLDEuMSwxLjEsMCwwLDEtMS4xLTEuMVY5LjU0N2E3LjM0Nyw3LjM0NywwLDEsMC0xNC42OTUsMFYyMC4xMDZBMS4xLDEuMSwwLDAsMSwzLjk4LDIxLjIwNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNDU2IDApIiBmaWxsPSIjZWM2NjA3IiBzdHJva2U9IiNlYzY2MDciIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICAgIDxwYXRoIGlkPSJQYXRoXzUwNCIgZGF0YS1uYW1lPSJQYXRoIDUwNCIgZD0iTTEuMSwzOC45NDJBMS4xNDQsMS4xNDQsMCwwLDEsLjQsMzguN2ExLjE2NiwxLjE2NiwwLDAsMS0uNC0uODU4di0yNC4yYTEuMSwxLjEsMCwwLDEsLjktMS4xTDMwLjQ2Nyw3LjIyMWExLjEyMiwxLjEyMiwwLDAsMSwuOS4yMiwxLjE0NCwxLjE0NCwwLDAsMSwuMzc0Ljg1OFYzMi41YTEuMSwxLjEsMCwwLDEtLjksMS4xTDEuMywzOC45MlpNMi4yLDE0LjQ4djIybDI3LjM0NC00Ljg4NFY5LjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDguNjQpIiBmaWxsPSIjMDA4MmMzIiBzdHJva2U9IiMwMDc5YmEiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" 
+                                            alt="User Login">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12"><div class="product-tabs login-tabs">
+                    <div class="container-fluid"><div class="tabs-header">
+                        <ul>
+                            <li class="active ">Login</li>
+                            <li class="">Signup</li>
+                        </ul>
+                        <div class="active-tab-indicator" style="left: 0%;"></div> 
+                    </div>
+                    <div class="tabs-content">
+                        <div class="login decaFadeInRight" style="animation-name: decaFadeInRight; visibility: visible; animation-duration: 0.6s;">
+                            <div class="floating-label"><div class="form-group">
+                                <input class="floating-input" type="email" placeholder=" " value="">
+                                <label>Enter your email/phone number</label>
+                            </div>
+                            <button class="decabutton" type="button">Login via otp</button>
+                        </div>
+                        <div class="new-user mt-5">
+                            <p class="text-uppercase text-center mb-0">New to decathlon ?</p>
+                            <button class="decabutton">Create an Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+-->

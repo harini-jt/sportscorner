@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="web.js"></script>
+    <title>not yet</title>
+</head>
+<body>              
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/splogo.jpg" style="width:50px;height:50px;"/></a><br>
+                <b style="font-family:Arial, Helvetica, sans-serif;">Sports</b>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Products</a></li>
+                    <li><a href="sign.html">Account</a></li>
+                    <li><a href="store.html"><img src="images/cart.png" class="cart" title="Shop Now" width="30" height="30"/></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="c1">
+                <h1>All Sports in one place!! <br>Explore the new Arrivals.</h1>
+                <p>For more click on the products in menu.</p>
+                <a href="store.html" class="exp">Explore Now &raquo;</a>
+            </div>
+            <div class="c2">
+                <img src="images/quote.jpg">               
+            </div>
+        </div>
+    </div>
+    <div class="trend">
+        <span class="section-header">TRENDING</span>
+        <div class="t_images">
+            <div class="item">
+                <h4 class="title">Sports Shoes</h4>
+                <img class="item-img" src="images/shoe.jpg">
+                <div class="details">
+                    <p class="price">₹599.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <h4 class="title">Mountain Bike Helmet</h4>
+                <img class="item-img" src="images/helmet.jpg">
+                <div class="details">
+                    <p class="price">₹999.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <h4 class="title">Basketball Hoop</h4>
+                <img class="item-img" src="images/basketballhoop.jpg">
+                <div class="details">
+                    <p class="price">₹2000.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <h4 class="title">Skate Board</h4>
+                <img class="item-img" src="images/skateboard.jpg" >
+                <div class="details">
+                    <p class="price">₹2121.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var c=0;
+        images = ["images/spequip.jpg","images/sportsaccs.jpg","images/shoesposter.jpg"];
+        function next(){
+            if(c == images.length - 1)
+            c = 0;
+            else
+            c++;
+            document.getElementById("img1").src = images[c];
+        }
+        function back(){
+            if(c<=0)
+            c = images.length -1;
+            else
+            c--;
+            document.getElementById("img1").src = images[c];
+        }
+    </script>
+    <div class="posters">
+        <div class="p1"><img id="img1" src="images/spequip.jpg"></div>
+        <span class="p1"><button class="prev"  id="prev" onclick="back()">&laquo;</button></span>
+        <span class="p1"><button class="next" id="next" onclick="next()">&raquo;</button></span>
+    </div>
+    <br><br><br><br><br>
+    <div>
+        <div class="content">
+            <div class="c1">
+                <h1>Limited Offers on Online shopping!!<br>Only till <i>10th of March</i></h1>
+                <p style="font-size: 30px;">So what are you waiting for? Hurry up!!</p>
+                <a href="store.html" class="exp">Explore Now &raquo;</a>
+            </div>
+            <div class="c2">
+                <img src="images/splogo.jpg">               
+            </div>
+        </div>  
+    </div>
+    <br><br><br><br>
+    <!------footer---------->
+    <div class="contact" style="background:linear-gradient(#ff523b,#fff); width:100%;display: inline-block;">
+        <div class="section-header"><br>
+            Follow us on 
+            <nav>
+                <ul class="follow">
+                    <a href="#">Facebook</a>
+                    <a href="#">Youtube</a>
+                    <a href="">Instagram</a>
+                </ul>
+            </nav>
+            Visit us<br> 222, ABC in MUMBAI, PUNE<br>
+            <a href="#">OTHER BRANCHES</a>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+.nav-bar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: radial-gradient(#ffd6d6, #fff); /*);*/
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.c2 img {
+  flex-basis: 50%;
+  float: right;
+  padding: 50px 0;
+}
+.exp {
+  display: inline-block;
+  border-radius: 20px;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  background: #ff523b;
+}
+.trend {
+  margin: 70px 0;
+  display: table;
+  width: 100%;
+  border-spacing: 40px;
+}
+.posters img {
+  /*display: block;*/
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.posters {
+  max-width: 100%;
+}
+.emailform {
+  font-family: Roboto, sans-serif;
+  color: #1a1b1f;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: auto;
+}
+.submail,
+.subsports {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  text-align: center;
+}
+.Subscribe {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 9px 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #0082c3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sub {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40%;
+}
+.form-block {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: auto;
+}
+.signup,
+#loginform {
+  background: radial-gradient(#fff, #9edfff);
+  flex-wrap: wrap;
+  margin: auto;
+  border: 0;
+  padding: 10px;
+  width: 30%;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+button,
+#signup {
+  background-color: #0082c3;
+  color: white;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.prev,
+.next {
+  width: 50px;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 1300px;
+}
+.prev,
+.next,
+#img {
+  flex-wrap: wrap;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+/*products css*/
+.btn-purchase {
+  display: block;
+  width: 40%;
+  font-size: 1.75em;
+}
+.addbtn {
+  background-color: transparent;
+  color: #000;
+  font-weight: 900;
+  border: transparent;
+  float: right;
+}
+.removebtn {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0;
+  /* width:auto*/
+  font-weight: bold;
+}
+.item {
+  /*max-width: 20%;
+  background-color: lavender;
+  flex-basis: 25%;
+  max-width: 300px;*/
+  width: calc(100% / 6);
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 6px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+  text-align: center;
+  margin: 2%;
+  padding: 20px;
+}
+.item-img {
+  width: 100%;
+}
+.prod-row {
+  /*overflow: hidden;
+  max-width: 100%;*/
+  /*box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;*/
+  width: 100%;
+  text-align: center;
+}
+.details {
+  padding-bottom: 40px;
+  padding-block-end: -10px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+/*cart css*/
+.c-row {
+  text-decoration: initial;
+  display: flex;
+}
+.cart-price,
+.cart-item,
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 30px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+.c-item {
+  width: 45%;
+}
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+.follow {
+  display: flex;
+  justify-content: space-around;
+}
+/*.c3 {
+  transition: transform 0.5s;
+}
+.c3 :hover {
+  transform: translateY(-10px);
+}*/
